@@ -1,4 +1,5 @@
 import * as model from '../models/address';
+import kakao from '../utils/kakao';
 
 export function exactAddressMatch(address, callback) {
     model.findByAddress(address, (err, result) => {
